@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/modules.xml
+/.idea.MotorcycleRunner.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../../../:\Users\anjac\OneDrive\Рабочий стол\а)\работа\unity\MotorcycleGame\MotorcycleRunner\MotorcycleRunner\.idea\.idea.MotorcycleRunner\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
