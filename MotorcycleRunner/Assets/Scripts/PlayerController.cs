@@ -29,4 +29,14 @@ public class PlayerController : MonoBehaviour
         myRigidBody.velocity = move * speed;
     }
 
+    // When Player collides with other objects
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+            health = 0;
+        }
+    }
+
 }
