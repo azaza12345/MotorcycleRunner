@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+
+    [SerializeField] private float bulletSpeed = 10;
+    [SerializeField] private float bound = 10;
     private Rigidbody2D bulletRb;
 
-    private float bulletSpeed = 10;
-    private float bound = 10;
-
-    void Start()
+    private void Start()
     {
         bulletRb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
         MoveBullet();
         DestroyOutOfBounds();
     }
 
     // Makes bullet fly straight right
-    void MoveBullet()
+    private void MoveBullet()
     {
         bulletRb.velocity = Vector2.right * bulletSpeed;
     }
 
     // If bullet is out of bounds, destroys it
-    void DestroyOutOfBounds()
+    private void DestroyOutOfBounds()
     {
         if (transform.position.x < -bound | transform.position.x > bound)
         {
@@ -35,12 +35,12 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.GetComponent<EnemyController>())
         {
             Destroy(gameObject);
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }
