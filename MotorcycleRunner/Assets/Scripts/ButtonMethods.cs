@@ -15,7 +15,7 @@ public class ButtonMethods : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(currentScene++);
+        SceneManager.LoadScene(currentScene + 1);
     }
 
     public void ReloadScene()

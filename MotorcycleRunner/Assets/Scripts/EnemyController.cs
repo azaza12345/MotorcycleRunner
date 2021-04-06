@@ -5,6 +5,9 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] private float enemySpeed = 3;
+    [SerializeField] private int enemyScore = 5;
+
+    private GameManager gameManager;
     private Rigidbody2D enemyRb;
     private Vector2 move;
     private PlayerController player;
@@ -13,6 +16,7 @@ public class EnemyController : MonoBehaviour
     {
         player = FindObjectOfType<PlayerController>();
         enemyRb = GetComponent<Rigidbody2D>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void FixedUpdate() 
@@ -24,5 +28,10 @@ public class EnemyController : MonoBehaviour
     {
         move = (player.transform.position - transform.position).normalized;
         enemyRb.velocity = move * enemySpeed;
+    }
+
+    private void OnDestroy()
+    {
+        gameManager.UpdateScore(enemyScore);    
     }
 }
