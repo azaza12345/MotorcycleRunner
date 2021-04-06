@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("doesn't work");
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
