@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private Rigidbody2D enemyRb;
-    private GameObject player;
-    private Vector2 move;
-
     [SerializeField] private float enemySpeed = 3;
+    private Rigidbody2D enemyRb;
+    private Vector2 move;
+    private PlayerController player;
 
-    void Start()
+    private void Start()
     {
+        player = FindObjectOfType<PlayerController>();
         enemyRb = GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Player");
     }
 
-    void FixedUpdate() 
+    private void FixedUpdate() 
     {
         MoveEnemy();
     }
 
-    void MoveEnemy()
+    private void MoveEnemy()
     {
         move = (player.transform.position - transform.position).normalized;
         enemyRb.velocity = move * enemySpeed;
