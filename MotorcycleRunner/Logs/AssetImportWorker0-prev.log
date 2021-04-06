@@ -111,3 +111,11 @@ System memory in use after: 85.3 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2279.
 Total: 7.183600 ms (FindLiveObjects: 0.512800 ms CreateObjectMapping: 0.181700 ms MarkObjects: 6.436000 ms  DeleteObjects: 0.050200 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 639.463848 seconds.
+  path: Assets/Scripts/ButtonMethods.cs
+  artifactKey: Guid(481e0390cbb4188468d5035ef072b498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ButtonMethods.cs using Guid(481e0390cbb4188468d5035ef072b498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a03a801e72e841266e0100f7db5c86') in 0.225527 seconds
+  Import took 0.245321 seconds .
+

@@ -6,10 +6,20 @@ using UnityEngine.UI;
 
 public class ButtonMethods : MonoBehaviour
 {
-    public Button playButton;
+    int currentScene;
 
-    public void StartGame()
+    private void Start()
     {
-        SceneManager.LoadScene(0);
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(currentScene++);
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(currentScene);
     }
 }
