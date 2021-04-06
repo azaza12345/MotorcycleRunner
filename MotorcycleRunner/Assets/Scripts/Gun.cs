@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public GameObject bulletPrefab;
 
-    private int maxMagazineCount = 15;
     [SerializeField] private int magazineCount;
     [SerializeField] private bool magazineIsEmpty;
+    [SerializeField] private Bullet bulletPrefab;
+    [SerializeField] private Transform gun;
+
+    private int maxMagazineCount = 15;
 
     void Start()
     {
@@ -35,7 +37,7 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && !magazineIsEmpty)
         {
-            Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
+            Instantiate(bulletPrefab, gun.position, bulletPrefab.transform.rotation);
             magazineCount--;
         }
         

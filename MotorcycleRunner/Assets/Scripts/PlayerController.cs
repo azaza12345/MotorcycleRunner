@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     // When Player collides with other objects
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.GetComponent<EnemyController>())
         {
             Destroy(collision.gameObject);
             health = 0;
