@@ -112,3 +112,66 @@ Received Import Request.
 Start importing Assets/Prefabs/Bullet.prefab using Guid(5dbc042b2cb492a4385a938ac540cf04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0a39d45cb86d4ce52fef262b20d2a8') in 0.059819 seconds
   Import took 0.084060 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002403 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.993 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1823 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.8 MB.
+System memory in use after: 90.1 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2268.
+Total: 7.845100 ms (FindLiveObjects: 0.466800 ms CreateObjectMapping: 0.194900 ms MarkObjects: 5.465100 ms  DeleteObjects: 1.715700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 226.295261 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(36daf4a131ff6974290fad73bbbd0c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(36daf4a131ff6974290fad73bbbd0c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc80732ccada026880e185ec3feddcb') in 0.250929 seconds
+  Import took 0.266391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000833 seconds.
+  path: Assets/Prefabs/Enemy1.prefab
+  artifactKey: Guid(6e369c6b02b542645866052c5d19e0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy1.prefab using Guid(6e369c6b02b542645866052c5d19e0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a859ba009129992e0cacdb81a3dcf3e6') in 0.137523 seconds
+  Import took 0.154478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001488 seconds.
+  path: Assets/Prefabs/Level Loader.prefab
+  artifactKey: Guid(31a3b77d4df8c914abf4833addfb61c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level Loader.prefab using Guid(31a3b77d4df8c914abf4833addfb61c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21476e4fcf26e77222108166d96fb700') in 0.083934 seconds
+  Import took 0.119820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(07279d3b4452def47889dc20845be9a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(07279d3b4452def47889dc20845be9a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6c2e329fdb23c97203093a610c24d2') in 0.029764 seconds
+  Import took 0.040350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/Prefabs/Enemy Spawner.prefab
+  artifactKey: Guid(d64fd0d45ec537c448d24151d97b8e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy Spawner.prefab using Guid(d64fd0d45ec537c448d24151d97b8e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5fba08361bafb34d73d721fde3fd07') in 0.014869 seconds
+  Import took 0.024046 seconds .
+
