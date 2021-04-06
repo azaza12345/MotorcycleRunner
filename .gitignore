@@ -8671,3 +8671,5 @@ MotorcycleRunner/Library/ArtifactDB-lock
 MotorcycleRunner/Library/ArtifactDB
 MotorcycleRunner/Library/APIUpdater/project-dependencies.graph
 MotorcycleRunner/Library/AnnotationManager
+/MotorcycleRunner/Library
+/MotorcycleRunner/Logs
