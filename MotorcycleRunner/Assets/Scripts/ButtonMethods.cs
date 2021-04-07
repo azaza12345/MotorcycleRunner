@@ -6,7 +6,10 @@ using UnityEngine.UI;
 
 public class ButtonMethods : MonoBehaviour
 {
-    int currentScene;
+    [SerializeField] private GameObject aboutPanel;
+    [SerializeField] private GameObject settingsPanel;
+
+    private int currentScene;
 
     private void Start()
     {
@@ -21,5 +24,25 @@ public class ButtonMethods : MonoBehaviour
     public void ReloadScene()
     {
         SceneManager.LoadScene(currentScene);
+    }
+
+    public void OpenAboutPanel()
+    {
+        aboutPanel.SetActive(true);
+    }
+
+    public void OpenSettingsPanel()
+    {
+        settingsPanel.SetActive(true);
+    }
+
+    public void CloseAboutPanel()
+    {
+        aboutPanel.SetActive(false);
+    }
+
+    public void CloseSettingsPanel()
+    {
+        settingsPanel.SetActive(false);
     }
 }
