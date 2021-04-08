@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private GameObject gameOverPanel;
 
     [SerializeField] private int score;
 
@@ -21,8 +22,9 @@ public class GameManager : MonoBehaviour
         scoreText.text = $"Score: {score}";
     }
 
-    private void GameOver()
-    {
-
-    }
+    //public void GameOver()
+    //{
+    //    gameOverPanel.SetActive(true);
+    //    Time.timeScale = 0;
+    //}
 }
