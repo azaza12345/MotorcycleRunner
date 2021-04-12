@@ -14,7 +14,7 @@ public class Road : MonoBehaviour
         repeatWidth = GetComponent<BoxCollider2D>().size.x / 2;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         MoveLeft();
         RepeatRoad();
