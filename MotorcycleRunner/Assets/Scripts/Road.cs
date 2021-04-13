@@ -8,24 +8,24 @@ public class Road : MonoBehaviour
     [SerializeField] private float repeatWidth;
     [SerializeField] private float speed;
 
-    private void Start()
+    void Start()
     {
         startPosition = transform.position;
         repeatWidth = GetComponent<BoxCollider2D>().size.x / 2;
     }
 
-    private void Update()
+    void FixedUpdate()
     {
         MoveLeft();
         RepeatRoad();
     }
 
-    private void MoveLeft()
+    void MoveLeft()
     {
-        transform.Translate(Vector3.left * (speed * Time.deltaTime));
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
 
-    private void RepeatRoad()
+    void RepeatRoad()
     {
         if (transform.position.x < startPosition.x - repeatWidth)
         {

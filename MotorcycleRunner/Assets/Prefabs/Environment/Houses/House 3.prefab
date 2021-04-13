@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!61 &4654493023908349047
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2749288135414218051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.0650717, y: 1.6014988}
+  m_SpriteTilingProperty:
+    border: {x: 0.4, y: 0.35, z: 0.2, w: 0.45000002}
+    pivot: {x: 0.51909727, y: 0.07118052}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0458524, y: 0.8400775}
+  m_EdgeRadius: 0
 --- !u!1001 &2769692440149448323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8,12 +34,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
+      propertyPath: m_Size.x
+      value: 2.1695647
+      objectReference: {fileID: 0}
+    - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Size.y
-      value: 2.7637322
+      value: 3.0247536
+      objectReference: {fileID: 0}
+    - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
+      propertyPath: m_Offset.x
+      value: -1.0080969
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Offset.y
-      value: 2.3227997
+      value: 2.7006607
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -113,3 +147,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
+--- !u!1 &2749288135414218051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 20409580315880384, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
+  m_PrefabInstance: {fileID: 2769692440149448323}
+  m_PrefabAsset: {fileID: 0}

@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] public int health;
     [SerializeField] private float speed = 5;
-    [SerializeField] private int health = 100;
 
     private GameManager gameManager;
 
-    private Rigidbody2D myRigidBody;
+    private Rigidbody2D playerRb;
     private Vector2 move;
+
+    private int enemy1Damage = 50;
 
     private void Start()
     {
-        myRigidBody = GetComponent<Rigidbody2D>();
+        playerRb = GetComponent<Rigidbody2D>();
         gameManager = FindObjectOfType<GameManager>();
+
+        health = 100;
+        gameManager.UpdateHealthText(health);
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
-
-        //if (health <= 0)
-        //{
-        //    gameManager.GameOver();
-        //}
     }
 
     // Moves player based on arrow key input (soon will make joystick)
@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         move.x = Input.GetAxis("Horizontal");
         move.y = Input.GetAxis("Vertical");
 
-        myRigidBody.velocity = move * speed;
+        playerRb.velocity = move * speed;
     }
 
     // When Player collides with other objects
@@ -43,7 +43,18 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.GetComponent<EnemyController>())
         {
             Destroy(collision.gameObject);
-            health = 0;
+            UpdateHealth(-enemy1Damage);
+        }
+    }
+
+    public void UpdateHealth(int healthToAdd)
+    {
+        health += healthToAdd;
+        gameManager.UpdateHealthText(health);
+
+        if (health <= 0)
+        {
+            gameManager.GameOver();
         }
     }
 
