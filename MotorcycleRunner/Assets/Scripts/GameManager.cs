@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI recordText;
     [SerializeField] private TextMeshProUGUI healthText;
 
     [SerializeField] private GameObject gameOverPanel;
 
     [SerializeField] private int score;
+    [SerializeField] private int record;
 
     private void Start()
     {
@@ -42,8 +44,15 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (score > record)
+        {
+            record = score;
+        }
+
+        recordText.text = $"Record: {record}";
+
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0;       
     }
 
     public void ReloadScene()

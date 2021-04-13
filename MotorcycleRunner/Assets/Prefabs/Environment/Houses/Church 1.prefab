@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &826796901170285899
+--- !u!1001 &8943714169804361307
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,23 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Size.x
-      value: 3.2397265
+      value: 3.0994582
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Size.y
-      value: 5.3282084
+      value: 3.3532314
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Offset.x
-      value: -0.07613516
+      value: -0.04422635
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Offset.y
-      value: 2.6659386
-      objectReference: {fileID: 0}
-    - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
+      value: 3.535448
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -33,11 +29,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 1.28
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1.6
+      value: 5.3333335
       objectReference: {fileID: 0}
     - target: {fileID: -7853181952942118132, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -49,15 +45,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20409580315880384, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Name
-      value: Curch
+      value: Church 1
       objectReference: {fileID: 0}
     - target: {fileID: 4451310762579716062, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Size.x
-      value: 1.28
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 4451310762579716062, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Size.y
-      value: 1.6
+      value: 5.3333335
       objectReference: {fileID: 0}
     - target: {fileID: 4451310762579716062, guid: c9fcd1d9da37fc441b8b1338683acbfa, type: 3}
       propertyPath: m_Sprite

@@ -8,7 +8,7 @@ public class HousesDestroyer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other.name);
-        if(other.GetComponent<House>())
+        if (other.gameObject.GetComponent<House>())
             Destroy(other.gameObject);
     }
 }
