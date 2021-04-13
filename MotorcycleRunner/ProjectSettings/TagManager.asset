@@ -43,3 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Road
+    uniqueID: 18713767
+    locked: 0
+  - name: Enviromnent
+    uniqueID: 2199799731
+    locked: 0
+  - name: Characters
+    uniqueID: 2965849093
+    locked: 0
