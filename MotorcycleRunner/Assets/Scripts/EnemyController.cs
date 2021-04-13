@@ -6,15 +6,16 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] private float enemySpeed = 3;
     [SerializeField] private int enemyScore = 5;
+    [SerializeField] private int collidingDamage;
 
     private GameManager gameManager;
     private Rigidbody2D enemyRb;
     private Vector2 move;
-    private PlayerController player;
+    private PlayerHealth player;
 
     private void Start()
     {
-        player = FindObjectOfType<PlayerController>();
+        player = FindObjectOfType<PlayerHealth>();
         enemyRb = GetComponent<Rigidbody2D>();
         gameManager = FindObjectOfType<GameManager>();
     }
@@ -30,8 +31,19 @@ public class EnemyController : MonoBehaviour
         enemyRb.velocity = move * enemySpeed;
     }
 
+    // When Enemy collides with other Player
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
+        if (player)
+        {
+            player.TakeDamage(collidingDamage);
+            Destroy(gameObject);
+        }
+    }
+
     private void OnDestroy()
     {
-        gameManager.UpdateScore(enemyScore);    
+        gameManager.UpdateScore(enemyScore);   
     }
 }

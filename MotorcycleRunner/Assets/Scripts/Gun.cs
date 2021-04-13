@@ -5,26 +5,25 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
 
-    [SerializeField] private int magazineCount;
+    [SerializeField] private int maxMagazineCount;
     [SerializeField] private bool magazineIsEmpty;
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private Transform gun;
+    private int magazineCount;
 
-    private int maxMagazineCount = 15;
-
-    void Start()
+    private void Start()
     {
         magazineCount = maxMagazineCount;
         magazineIsEmpty = false;
     }
 
-    void Update()
+    private void Update()
     {
         Shooting();
     }
 
     // Reload gun's magazine
-    IEnumerator ReloadMagazineRoutine()
+    private IEnumerator ReloadMagazineRoutine()
     {
         yield return new WaitForSeconds(2);
         magazineCount = maxMagazineCount;
@@ -33,7 +32,7 @@ public class Gun : MonoBehaviour
 
     // Shoots when Space button is pressed (soon will change it on button)
     // When gun's magazine is Empty, reload the gun
-    void Shooting()
+    private void Shooting()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !magazineIsEmpty)
         {
