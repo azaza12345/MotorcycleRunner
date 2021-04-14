@@ -6,10 +6,11 @@ public class Gun : MonoBehaviour
 {
 
     [SerializeField] private int maxMagazineCount;
+    [SerializeField] private int magazineCount;
     [SerializeField] private bool magazineIsEmpty;
+    
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private Transform gun;
-    private int magazineCount;
 
     private void Start()
     {

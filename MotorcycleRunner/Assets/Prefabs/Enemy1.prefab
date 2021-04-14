@@ -173,4 +173,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 3
   enemyScore: 5
-  collidingDamage: 10
+  collidingDamage: 30

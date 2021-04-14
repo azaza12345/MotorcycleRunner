@@ -44,6 +44,6 @@ public class EnemyController : MonoBehaviour
 
     private void OnDestroy()
     {
-        gameManager.UpdateScore(enemyScore);   
+        gameManager.UpdateScore(enemyScore);
     }
 }

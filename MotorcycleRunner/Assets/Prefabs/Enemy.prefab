@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 3
   enemyScore: 5
-  collidingDamage: 10
+  collidingDamage: 20
 --- !u!114 &-4148015399829926440
 MonoBehaviour:
   m_ObjectHideFlags: 0

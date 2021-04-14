@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI recordText;
     [SerializeField] private TextMeshProUGUI healthText;
 
+    [SerializeField] private GameObject pauseButton;
     [SerializeField] private GameObject gameOverPanel;
 
     [SerializeField] private int score;
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
 
         recordText.text = $"Record: {record}";
 
+        pauseButton.SetActive(false);
         gameOverPanel.SetActive(true);
         Time.timeScale = 0;       
     }

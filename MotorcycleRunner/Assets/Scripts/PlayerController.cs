@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D playerRb;
     private Vector2 move;
 
-    private int enemy1Damage = 50;
-
     private void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
