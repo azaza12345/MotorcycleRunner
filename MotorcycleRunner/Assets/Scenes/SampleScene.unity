@@ -1586,7 +1586,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3795317534364110106, guid: d64fd0d45ec537c448d24151d97b8e68, type: 3}
       propertyPath: spawnArea
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795317534364110106, guid: d64fd0d45ec537c448d24151d97b8e68, type: 3}
+      propertyPath: delayBetweenSpawn
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3795317534364110106, guid: d64fd0d45ec537c448d24151d97b8e68, type: 3}
       propertyPath: enemies.Array.size
@@ -1667,7 +1671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4272387980195065792, guid: d26a30dfb1f7eae4188c87851b888f87, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4272387980195065792, guid: d26a30dfb1f7eae4188c87851b888f87, type: 3}
       propertyPath: m_LocalPosition.z

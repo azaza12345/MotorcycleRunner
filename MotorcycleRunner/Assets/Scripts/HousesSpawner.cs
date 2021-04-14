@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = System.Random;
+using Random = UnityEngine.Random;
 
 public class HousesSpawner : MonoBehaviour
 {
@@ -15,8 +15,8 @@ public class HousesSpawner : MonoBehaviour
     {
         while (true)
         {
-            var timeBetweenSpawn = UnityEngine.Random.Range(minTimeBetweenSpawn, maxTimeBetweenSpawn);
-            var randomHouse = UnityEngine.Random.Range(0, houses.Length);
+            var timeBetweenSpawn = Random.Range(minTimeBetweenSpawn, maxTimeBetweenSpawn);
+            var randomHouse = Random.Range(0, houses.Length);
             
             //Instantiate new house as child for HousesSpawner
             var house = Instantiate(houses[randomHouse], transform.position, Quaternion.identity);

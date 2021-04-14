@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5169d6e9fea229140b3b7ecef5fe01ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 3
+  enemySpeed: 5
   enemyScore: 5
   collidingDamage: 20
 --- !u!114 &-4148015399829926440
