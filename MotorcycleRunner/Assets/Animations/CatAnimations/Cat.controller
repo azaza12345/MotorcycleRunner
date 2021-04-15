@@ -32,8 +32,7 @@ AnimatorState:
   m_Name: CatSideAnimation
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -8022018724039997144}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -108,10 +107,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4738307693577026979}
-    m_Position: {x: 310, y: 120, z: 0}
+    m_Position: {x: 330, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3051946939321599304}
-    m_Position: {x: 300, y: 220, z: 0}
+    m_Position: {x: 220, y: 210, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
