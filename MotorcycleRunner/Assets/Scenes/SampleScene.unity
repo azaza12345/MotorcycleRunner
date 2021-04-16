@@ -1446,6 +1446,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 875058410, guid: 36daf4a131ff6974290fad73bbbd0c13, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.188
+      objectReference: {fileID: 0}
     - target: {fileID: 3282265243725078748, guid: 36daf4a131ff6974290fad73bbbd0c13, type: 3}
       propertyPath: maxMagazineCount
       value: 15
