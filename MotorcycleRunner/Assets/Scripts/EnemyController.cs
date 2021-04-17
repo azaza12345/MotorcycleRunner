@@ -37,6 +37,8 @@ public class EnemyController : MonoBehaviour
     public void OnDestroy()
     {
         // Enemy death animation
-        gameManager.UpdateScore(enemyScore);
+        // gameManager.UpdateScoreText(enemyScore);
+
+        if (gameManager) { Debug.Log("wtf"); }
     }
 }
