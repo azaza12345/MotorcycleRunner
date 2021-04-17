@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb053217df962347b9b86b4cd8ceb27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMagazineCount: 0
+  maxMagazineCount: 15
   magazineCount: 0
   magazineIsEmpty: 0
   bulletPrefab: {fileID: 4497898204050691755, guid: 5dbc042b2cb492a4385a938ac540cf04, type: 3}

@@ -63,4 +63,8 @@ C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Data\Tools\RoslynScripts\uni
 # Starting compiling Unity.2D.Psdimporter.Editor.dll
 C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-d91aa3c61baee88438239081d4fa0e2f
 # Starting compiling Assembly-CSharp.dll
+<<<<<<< HEAD
 C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-c076ad6e12febff419f90f2573746bfb
+=======
+C:\Program Files\Unity\Hub\Editor\2020.3.1f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-01d24c8d04640df4284e10bc2ee21c27
+>>>>>>> LevCommits
