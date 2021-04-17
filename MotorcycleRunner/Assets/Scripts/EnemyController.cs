@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     [Header("Death")]
     [SerializeField] private int enemyScore = 5;
     [SerializeField] private int collidingDamage;
+
     [Header("Moving")]
     [SerializeField] protected float enemySpeed = 3;
 
@@ -33,8 +34,9 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    public void EnemyDeath()
     {
+        // Enemy death animation
         gameManager.UpdateScore(enemyScore);
     }
 }

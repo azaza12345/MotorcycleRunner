@@ -30,7 +30,7 @@ public class EnemyShooter : EnemyController
 
     private void FixedUpdate()
     {
-        if(isAppearance)
+        if (isAppearance)
             MoveHorizontal();
         else
             MoveVertical();
