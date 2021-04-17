@@ -22,22 +22,12 @@ public class BulletEnemy : MonoBehaviour
     private void Update()
     {
         MoveBullet();
-        DestroyOutOfBounds();
     }
 
     // Makes bullet fly straight right
     private void MoveBullet()
     {
         bulletRb.velocity = Vector2.left * bulletSpeed;
-    }
-
-    // If bullet is out of bounds, destroys it
-    private void DestroyOutOfBounds()
-    {
-        if (transform.position.x < -bound | transform.position.x > bound)
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

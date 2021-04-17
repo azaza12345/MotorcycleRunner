@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 644848414118431025}
   - component: {fileID: 644848414118431036}
   - component: {fileID: 644848414118431037}
-  - component: {fileID: 644848414118431038}
   - component: {fileID: -5971342854205385316}
   m_Layer: 0
   m_Name: Enemy2
@@ -154,21 +153,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.39888978, y: 0.3858176}
   m_EdgeRadius: 0
---- !u!114 &644848414118431038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644848414118431026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5169d6e9fea229140b3b7ecef5fe01ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySpeed: 2.5
-  enemyScore: 5
-  collidingDamage: 30
 --- !u!114 &-5971342854205385316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,9 +165,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5fc23bc36fc384197f1741d17efee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyScore: 5
+  collidingDamage: 5
+  enemySpeed: 4
+  appearanceTime: 1.5
   bulletPrefab: {fileID: 7692566127282616809, guid: 43c33e3df2c23ef4188edadf0cbec6a1, type: 3}
   gun: {fileID: 8656513604465189632}
-  bulletsToSpawn: 3
+  minShootDelay: 1.5
+  maxShootDelay: 3
 --- !u!1 &6355730284396972113
 GameObject:
   m_ObjectHideFlags: 0
