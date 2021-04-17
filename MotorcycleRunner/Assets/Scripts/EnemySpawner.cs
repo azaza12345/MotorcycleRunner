@@ -7,14 +7,16 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private EnemyController[] enemies;
     [SerializeField] private float delayBetweenSpawn;
-    [SerializeField] private float spawnArea;
+
+    [SerializeField] private float spawnTopBound = 0.2f;
+    [SerializeField] private float spawnBottomBound = -1.7f;
 
     private IEnumerator Start()
     {
         while (true)
         {
             int randomEnemyIndex = UnityEngine.Random.Range(0, enemies.Length);
-            float ySpawnPosition = UnityEngine.Random.Range(-spawnArea, spawnArea);
+            float ySpawnPosition = UnityEngine.Random.Range(spawnBottomBound, spawnTopBound);
             Vector2 spawnPosition = new Vector2(transform.position.x, ySpawnPosition);
             
             yield return new WaitForSeconds(delayBetweenSpawn);
@@ -26,6 +28,6 @@ public class EnemySpawner : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawCube(transform.position, new Vector2(1.5f, spawnArea));
+        Gizmos.DrawCube(transform.position, new Vector2(1.5f, spawnTopBound - spawnBottomBound));
     }
 }

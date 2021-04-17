@@ -26,11 +26,9 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        EnemyController enemy = other.gameObject.GetComponent<EnemyController>();
-
-        if (enemy)
+        if (other.gameObject.GetComponent<EnemyController>())
         {
-            enemy.EnemyDeath();
+            Destroy(gameObject);
             Destroy(other.gameObject);
         }
     }

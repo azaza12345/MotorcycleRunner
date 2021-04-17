@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [Header("Death")]
-    [SerializeField] private int enemyScore = 5;
+    [SerializeField] private int enemyScore = 5; 
     [SerializeField] private int collidingDamage;
 
     [Header("Moving")]
@@ -34,7 +34,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void EnemyDeath()
+    public void OnDestroy()
     {
         // Enemy death animation
         gameManager.UpdateScore(enemyScore);
