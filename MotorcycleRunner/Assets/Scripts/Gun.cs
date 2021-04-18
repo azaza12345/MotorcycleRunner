@@ -12,15 +12,18 @@ public class Gun : MonoBehaviour
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private Transform gun;
 
+    private Animator playerAnimator;
+
     private void Start()
     {
+        playerAnimator = GetComponent<Animator>();
         magazineCount = maxMagazineCount;
         magazineIsEmpty = false;
     }
 
     private void Update()
     {
-        Shooting();
+        ShootingMethods();
     }
 
     // Reload gun's magazine
@@ -33,12 +36,11 @@ public class Gun : MonoBehaviour
 
     // Shoots when Space button is pressed (soon will change it on button)
     // When gun's magazine is Empty, reload the gun
-    private void Shooting()
+    private void ShootingMethods()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !magazineIsEmpty)
         {
-            Instantiate(bulletPrefab, gun.position, bulletPrefab.transform.rotation);
-            magazineCount--;
+            StartCoroutine(Shoot());
         }
         
         if (magazineCount == 0)
@@ -46,6 +48,14 @@ public class Gun : MonoBehaviour
             magazineIsEmpty = true;
             StartCoroutine(ReloadMagazineRoutine());
         }
+    }
+
+    private IEnumerator Shoot()
+    {
+        playerAnimator.SetTrigger("Shoot_trigger");
+        yield return new WaitForSeconds(0.3f);
+        Instantiate(bulletPrefab, gun.position, bulletPrefab.transform.rotation);
+        magazineCount--;
     }
 
 }

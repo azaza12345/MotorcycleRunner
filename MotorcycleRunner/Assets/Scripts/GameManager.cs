@@ -21,23 +21,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    private void StartGame()
-    {
-        if (gameOverPanel.activeSelf) 
-        { 
-            gameOverPanel.SetActive(false); 
-        }
-
-        score = 0;
-        UpdateScore(0);
-    }
-
     public void UpdateHealthText(int health)
     {
         healthText.text = $"Health: {health}";
     }
 
-    public void UpdateScore(int scoreToAdd)
+    public void UpdateScoreText(int scoreToAdd)
     {
         score += scoreToAdd;
         scoreText.text = $"Score: {score}";
